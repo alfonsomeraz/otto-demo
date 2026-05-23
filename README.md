@@ -21,6 +21,16 @@ Navigate to http://localhost:8080 — Username: `admin`, Password: `admin`.
 
 Trigger `merchant_transactions_ingest` first to generate `raw_transactions.csv`, then trigger `fraud_features_daily` to see the intentional failure at `check_snowflake_connection_convention`.
 
+## Setting Up Otto Context
+
+Before running the Otto demo prompts, give Otto access to the project:
+
+1. Open Otto and start a new conversation
+2. Attach or reference the project directory: `/Users/alfonsomeraz/airflow-demo/otto-demo`
+3. For the failure investigation prompts, also reference `include/meridianpay_airflow_conventions.md`
+
+Otto works best when it can read the DAG files and conventions doc directly.
+
 ## Otto Demo Prompts
 
 ### 1. Failure Investigation
@@ -45,9 +55,7 @@ row counts, and notify Slack on failure. Use the TaskFlow API where appropriate.
 
 ### 4. Upgrade Readiness
 ```
-Review these DAGs for Airflow 3 upgrade readiness. Identify deprecated patterns, provider
-compatibility concerns, risky imports, and recommended changes. Prioritize the findings by
-business impact.
+Review the merchant_transactions_ingest, fraud_features_daily, and merchant_dashboard_refresh DAGs for Airflow 3 upgrade readiness. Identify deprecated patterns, provider compatibility concerns, risky imports, and recommended changes. Prioritize the findings by business impact.
 ```
 
 ## Key Files
