@@ -26,7 +26,7 @@ Trigger `merchant_transactions_ingest` first to generate `raw_transactions.csv`,
 Before running the Otto demo prompts, give Otto access to the project:
 
 1. Open Otto and start a new conversation
-2. Attach or reference the project directory: `/Users/alfonsomeraz/airflow-demo/otto-demo`
+2. Attach or reference the project directory (the root of this repo)
 3. For the failure investigation prompts, also reference `include/meridianpay_airflow_conventions.md`
 
 Otto works best when it can read the DAG files and conventions doc directly.

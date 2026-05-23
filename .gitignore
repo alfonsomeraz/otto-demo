@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Airflow runtime
+.airflow/
+
+# macOS
+.DS_Store
+
+# Generated files (created at DAG runtime)
+include/raw_transactions.csv
+include/fraud_features.csv
+
+# Astro
+.astro/
