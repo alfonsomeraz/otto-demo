@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git commit *)",
+      "Bash(python3 -m json.tool include/sample_transactions.json)",
+      "Bash(pip index *)",
+      "Bash(pip install *)",
+      "Bash(python *)",
+      "Bash(AIRFLOW_HOME=/tmp/airflow python -m pytest tests/dags/test_dag_integrity.py -v)",
+      "Bash(git reset *)",
+      "Bash(pytest *)",
+      "Bash(AIRFLOW__CORE__XCOM_BACKEND=\"airflow.models.xcom.BaseXCom\" pytest *)",
+      "Bash(AIRFLOW__CORE__XCOM_BACKEND=\"airflow.models.xcom.BaseXCom\" python *)",
+      "Read(//Users/alfonsomeraz/**)",
+      "Read(//opt/airflow/**)",
+      "Bash(env)",
+      "Bash(AIRFLOW__CORE__XCOM_BACKEND=\"airflow.models.xcom.BaseXCom\" AIRFLOW_HOME=/tmp/airflow airflow db init)",
+      "Bash(python3 *)",
+      "Bash(cat)",
+      "Read(//tmp/**)",
+      "Bash(unset AIRFLOW_HOME)",
+      "Bash(bash /tmp/review.sh)",
+      "Bash(bash /tmp/convention_check.sh)",
+      "Bash(bash /tmp/logic_check.sh)",
+      "Bash(bash /tmp/final_check.sh)",
+      "Bash(bash /tmp/consistency.sh)",
+      "Bash(bash /tmp/code_style.sh)",
+      "Bash(astro --version)",
+      "Bash(astro dev *)"
+    ]
+  }
+}
