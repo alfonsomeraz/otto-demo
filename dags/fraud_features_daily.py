@@ -23,10 +23,6 @@ def fraud_features_daily():
 
     @task
     def check_snowflake_connection_convention():
-        """
-        Intentional demo failure: MeridianPay standardizes production Snowflake access
-        using conn_id='meridian_snowflake_prod', but this DAG uses the wrong ID.
-        """
         expected_conn_id = "meridian_snowflake_prod"
         actual_conn_id = "snowflake_prod"
 
